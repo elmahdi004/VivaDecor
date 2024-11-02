@@ -6,4 +6,103 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter_28pt-Thin.ttf');
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter_28pt-Light.ttf');
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter_28pt-ExtraLight.ttf');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter_28pt-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter_28pt-Medium.ttf');
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter_28pt-SemiBold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter_28pt-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter_18pt-ExtraBold.ttf');
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter_18pt-Black.ttf');
+    font-style: normal;
+    font-weight: 1000;
+}
+
+body{
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.container{
+    margin: 20px 64px 0 64px;
+}
+.container > nav{
+    display: flex;
+    justify-content: space-between;
+}
+.container > nav > .logo img{
+    width: 120px;
+}
+.container > nav .links{
+    display: flex;
+    align-items: center;
+}
+.container > nav .links ul{
+list-style: none;
+display: flex;
+margin-right: 200px;
+}
+.container > nav .links ul > li {
+    margin-right: 60px;
+}
+.container > nav .links ul > li > a{
+    color: var(--second-color);
+    font-weight: 700;
+    font-size: 16px;
+}
+.container > nav .links > ul li:first-child a{
+color: var(--main-color);}
+.container > nav .links > button{
+    padding: 8px 20px;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    cursor: pointer;
 }
