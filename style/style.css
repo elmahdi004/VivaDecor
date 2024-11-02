@@ -105,6 +105,7 @@ color: var(--main-color);}
     background-color: var(--main-color);
     border: none;
     cursor: pointer;
+    padding: 10px 20px;
 }
 .infos{
     margin-top: 70px;
@@ -206,4 +207,96 @@ color: var(--main-color);}
     font-weight: 200;
     font-size: 14px;
     color: var(--second-color);
+}
+.container > .services {
+    padding: 20px 0;
+}
+.container > .services .title{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.container > .services .title span{
+    width: 80px;
+    height: 3px;
+    border-radius: 10px;
+    background: var(--main-color);
+}
+.container > .services .title h1{
+    font-weight: 700;
+}
+.container > .services .services-list{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+    column-gap: 40px;
+}
+.container > .services .services-list img{
+    width: 45px;
+}
+
+.container > .services .services-list > .service-item{
+display: flex;
+column-gap: 25px;
+align-items: start;
+}
+.container > .services .services-list > .service-item > .details h1{
+font-size: 18px;
+font-weight: 700;
+color: var(--main-color);
+}
+.container > .services .services-list > .service-item > .details p{
+font-size: 14px;
+font-weight: 500;
+color: var(--second-color);
+margin-top: 10px;
+line-height: 20px;
+}
+.learn-section{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.learn-section .image > img{
+max-width: 500px;
+}
+
+.learn-section .details > h1{
+font-weight: 700;
+color: var(--main-color);
+}
+.learn-section .details > p{
+    margin-top: 30px;
+color: var(--second-color);
+line-height: 24px;
+padding-bottom: 70px;
+}
+.learn-section .details > .summary{
+margin-top: 10px;
+border-bottom: 2px solid rgba(0, 0, 0, 15%);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 15px 0;
+}
+.learn-section .details > .summary img{
+width: 20px;
+cursor: pointer;
+}
+.learn-section .details > .summary h2{
+font-size: 16px;
+font-weight: 700;
+color: var(--main-color);
+}
+.learn-section .details > button{
+border: none;
+color: white;
+background: var(--main-color);
+padding: 14px 80px;
+font-size: 15px;
+cursor: pointer;
+margin-top: 120px;
+font-weight: 700;
 }
