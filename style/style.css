@@ -382,7 +382,7 @@ position: relative;
 position: absolute;
 display: flex;
 top: 250px;
-left: 250px;
+left: 220px;
 }
 .container .about > .image .talks > .talk{
 background-color: var(--main-color);
@@ -433,4 +433,159 @@ font-weight: 600;
 font-weight: 500;
 font-size: 14px;
 color: var(--second-color);
+}
+.about > .image .switch{
+    display: flex;
+    position: absolute;
+    top: 560px;
+    column-gap: 15px;
+}
+.about > .image .switch .item{
+    width: 50px;
+    height: 50px;
+    background: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: border .3s ease-in-out;
+}
+.about > .image .switch .item:hover{
+border: 1px solid var(--second-color);
+}
+.about > .image .switch .item > img{
+    width: 30px;
+    height: 30px;
+}
+.newsletter{
+    margin-top: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.newsletter > h1{
+width: 50%;
+font-size: 34px;
+color: var(--main-color);
+}
+.newsletter > p{
+    width: 50%;
+    margin-top: 30px;
+    color: var(--second-color);
+    font-weight: 600;
+}
+footer{
+    margin-top: 100px;
+    padding: 20px;
+    background-color: var(--main-color);
+}
+footer .container{
+    position: relative;
+}
+footer .container .letter{
+    position: absolute;
+    width: 60%;
+    height: 70px;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+footer .container .letter .input{
+display: flex;
+align-items: center;
+
+}
+footer .container .letter .input > img{
+width: 20px;
+height: 12px;
+}
+footer .container .letter .input > input{
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    
+}
+footer .container .letter .input > input::placeholder{
+    color: var(--second-color);
+    font-size: 14px;
+}
+
+footer .container .letter button{
+background-color: var(--main-color);
+color: white;
+border: none;
+font-size: 16px;
+padding: 15px 40px;
+cursor: pointer;
+}
+footer .links{
+    display: flex;
+    padding: 70px;
+    column-gap: 100px;
+    justify-content: space-between;
+}
+footer .links .logo{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+footer .links .logo img{
+    width: 100px;
+}
+footer .links .logo p{
+    margin-top: 15px;
+    color: var(--second-color);
+}
+footer .links .sections{
+    display: flex;
+    column-gap: 70px;
+    /* margin-left: auto; */
+}
+footer .links .section{
+    display: flex;
+    flex-direction: column;
+    column-gap: 15px;
+    /* margin-left: auto; */
+}
+footer .links .section ul{
+    list-style: none;
+    margin-top: 15px;
+    color: var(--second-color);
+    /* margin-left: auto; */
+}
+footer .links .section ul li{
+margin: 10px 0;
+cursor: pointer;
+}
+footer .links .section  h1{
+font-size: 16px ;
+color: white;
+font-weight: 600;
+}
+.media{
+    margin-top: 20px;
+    display: flex;
+    column-gap: 15px;
+}
+.media > div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--second-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media > div > img{
+    max-width: 10px;
+    width: 10px;
 }
